@@ -1,0 +1,44 @@
+﻿
+@{
+    ViewData["Title"] = "edit";
+}
+
+@model DashBoard.bl.ViewModel.DepartmentVM
+@{
+    ViewData["Title"] = "create";
+}
+
+
+<h2>Edit department</h2>
+
+<form asp-action="edit" class="form-group">
+    @*<div asp-validation-summary="All"></div>*@
+    <label>ID</label>
+    <input class="form-control" type="text" asp-for="id" disabled />
+    <span asp-validation-for="name" class="text-danger"></span>
+    <br />
+    <label>department name</label>
+    <input class="form-control" type="text" asp-for="name" required />
+    <span asp-validation-for="name" class="text-danger"></span>
+    <br />
+    <label>department code</label>
+    <input class="form-control" type="text" asp-for="depCode" required />
+    <span asp-validation-for="depCode" class="text-danger"></span>
+    <center>
+
+        <input type="submit" class="btn btn-success" value="Save" />
+
+        <input type="reset" class="btn btn-danger" value="cancel" />
+        <a asp-action="delete" asp-route-id="@Model.id" class="btn btn-danger">Delete</a>
+
+
+    </center>
+
+</form>
+
+
+@section microsoftValidation{
+    <script src="~/plugins/jquery-validation/jquery.validate.js"></script>
+    <script src="~/plugins/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+}
+

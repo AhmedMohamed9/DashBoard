@@ -1,0 +1,14 @@
+D:\route\Asp.Net\MVC\DashBoard\DashBoard\DashBoard.dal\bin\Debug\net5.0\DashBoard.dal.deps.json
+D:\route\Asp.Net\MVC\DashBoard\DashBoard\DashBoard.dal\bin\Debug\net5.0\DashBoard.dal.runtimeconfig.json
+D:\route\Asp.Net\MVC\DashBoard\DashBoard\DashBoard.dal\bin\Debug\net5.0\DashBoard.dal.runtimeconfig.dev.json
+D:\route\Asp.Net\MVC\DashBoard\DashBoard\DashBoard.dal\bin\Debug\net5.0\DashBoard.dal.dll
+D:\route\Asp.Net\MVC\DashBoard\DashBoard\DashBoard.dal\bin\Debug\net5.0\ref\DashBoard.dal.dll
+D:\route\Asp.Net\MVC\DashBoard\DashBoard\DashBoard.dal\bin\Debug\net5.0\DashBoard.dal.pdb
+D:\route\Asp.Net\MVC\DashBoard\DashBoard\DashBoard.dal\obj\Debug\net5.0\DashBoard.dal.GeneratedMSBuildEditorConfig.editorconfig
+D:\route\Asp.Net\MVC\DashBoard\DashBoard\DashBoard.dal\obj\Debug\net5.0\DashBoard.dal.AssemblyInfoInputs.cache
+D:\route\Asp.Net\MVC\DashBoard\DashBoard\DashBoard.dal\obj\Debug\net5.0\DashBoard.dal.AssemblyInfo.cs
+D:\route\Asp.Net\MVC\DashBoard\DashBoard\DashBoard.dal\obj\Debug\net5.0\DashBoard.dal.csproj.CoreCompileInputs.cache
+D:\route\Asp.Net\MVC\DashBoard\DashBoard\DashBoard.dal\obj\Debug\net5.0\DashBoard.dal.dll
+D:\route\Asp.Net\MVC\DashBoard\DashBoard\DashBoard.dal\obj\Debug\net5.0\ref\DashBoard.dal.dll
+D:\route\Asp.Net\MVC\DashBoard\DashBoard\DashBoard.dal\obj\Debug\net5.0\DashBoard.dal.pdb
+D:\route\Asp.Net\MVC\DashBoard\DashBoard\DashBoard.dal\obj\Debug\net5.0\DashBoard.dal.genruntimeconfig.cache

@@ -1,0 +1,48 @@
+﻿@model IEnumerable<DashBoard.bl.ViewModel.employeeVM>
+@{
+    ViewData["Title"] = "Employee";
+}
+<style>
+    th{
+        text-align:center;
+    }
+</style>
+<h2>welcome in department</h2>
+<a asp-action="create" asp-controller="employee" class="btn btn-primary">Create New Employee</a>
+<br />
+<table class="table table-bordered table-hover table-striped text-center font-weight-bold">
+    <thead>
+        <tr class="text-center">
+            <th>id</th>
+            <th>Name</th>
+            <th>Salary</th>
+            <th>Department</th>
+            <th>is Active</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+
+    </thead>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @item.id
+            </td>
+            <td>
+                @item.name
+            </td>
+            <td>
+                @item.salary
+            </td>
+            <td>@item.department.name</td>
+            <td>@item.isActive</td>
+            <td><a class="btn btn-warning" asp-action="edit" asp-route-id="@item.id">Update</a></td>
+            <td><a class="btn btn-danger" asp-action="delete" asp-route-id="@item.id">Delete</a></td>
+        </tr>
+    }
+</table>
+
+
+

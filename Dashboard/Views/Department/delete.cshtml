@@ -1,0 +1,28 @@
+﻿@model DashBoard.bl.ViewModel.DepartmentVM
+@{
+    ViewData["Title"] = "delete";
+}
+<h2>delete department</h2>
+<br />
+<form asp-action="delete" class="form-group">
+    @*<div asp-validation-summary="All"></div>*@
+    <label>ID</label>
+    <input class="form-control" type="text" asp-for="id" disabled />
+    <br />
+    <label>department name</label>
+    <input class="form-control" type="text" asp-for="name" disabled />
+
+    <br />
+    <label>department code</label>
+    <input class="form-control" type="text" asp-for="depCode" disabled />
+    <span asp-validation-for="depCode" class="text-danger"></span>
+    <center>
+
+        <input type="submit" class="btn btn-success" value="Delete" />
+        <input type="reset" class="btn btn-danger" value="cancel" />
+
+
+    </center>
+
+</form>
+

@@ -1,0 +1,70 @@
+﻿@model DashBoard.bl.ViewModel.employeeVM
+@{
+    ViewData["Title"] = "edit";
+}
+@section bootstrapselect{
+    <link href="~/plugins/bootstrap-select/css/bootstrap-select.css" rel="stylesheet" />
+}
+
+<h2>create new department</h2>
+
+<form asp-action="edit" class="form-group">
+    @*<div asp-validation-summary="All"></div>*@
+    <div class="form-group">
+        <label for="Name">Name</label>
+        <input class="form-control" type="text" asp-for="name" required />
+        <span asp-validation-for="name" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label for="salary">Salary</label>
+        <input class="form-control" type="text" asp-for="salary" required />
+        <span asp-validation-for="salary" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="hiredate">HireDate</label>
+        <input class="form-control" type="date" asp-for="hiredate" required />
+        <span asp-validation-for="hiredate" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="email">Email</label>
+        <input class="form-control" type="email" asp-for="email" required />
+        <span asp-validation-for="email" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <select class="form-control" asp-for="departmentid" asp-items="(SelectList)ViewBag.department">
+            <option>Choose Department</option>
+
+        </select>
+    </div>
+
+    <div class="form-group">
+        <div class="demo-checkbox">
+            <label asp-for="isActive">IsActive</label>
+            <input type="checkbox" asp-for="isActive" checked="">
+            <span asp-validation-for="isActive" class="text-danger"></span>
+        </div>
+    </div>
+
+
+    <div class="form-group">
+        <label asp-for="notes">Notes</label>
+        <textarea class="form-control" cols="8" asp-for="notes" required></textarea>
+        <span asp-validation-for="notes" class="text-danger"></span>
+    </div>
+
+
+    <center>
+
+        <input type="submit" class="btn btn-success" value="Save" />
+        <input type="reset" class="btn btn-danger" value="cancel" />
+
+
+    </center>
+
+</form>
+
+
+@section microsoftValidation{
+    <script src="~/plugins/jquery-validation/jquery.validate.js"></script>
+    <script src="~/plugins/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+}
