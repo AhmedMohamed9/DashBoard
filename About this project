@@ -1,0 +1,15 @@
+this project is pos (proof of concept) and applyied in 
+- MVC CRUD Operations Using EF Core
+- Applied 3 layer architecture
+- Entity Frame Work Code First 
+- Web API CRUD Operations with (Postman Test , Swagger Documentation , CORS Policy) 
+- Applied Auto MApper , Dependency Injection
+- Validation (Client/Server) Side
+- Worked With Controlls (Data Table )
+- Filteration Using Ajax Request
+- Paging , Search , Sorting , Filter 
+- View Injection
+- Upload Files
+- Send Mail (SMTP) 
+- Applied Microsoft Identity (Authentication & Authorization) 
+-  Hosting and Deploy with ASP Smarter
